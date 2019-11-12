@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mission_to_mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Learn More!</a></p>
+    </div>
+
+    <div class="row" id="mars-news-weather">
+      <div class="col-md-6">
+        <h4 class="heading"><strong>Latest Mars News</strong></h4>
+        <h4 class="heading">{{mars.news_title}}</h4>
+        <p>{{mars.news_p}}</p>
+      </div>
+      <div class="col-md-6">
+        <h4 class="heading"><strong>Current Weather on Mars</strong></h4>
+        <p>{{mars.mars_weather}}</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row" id="mars-image-data">
+      <div class="col-md-6">
+        <h4 class="heading"><strong>Featured Mars Image</strong></h4>
+        <img src={{mars.featured_image_url}} width="500px">
+      </div>
+      <div class="col-md-6">
+        <br><br><br>
+        <table class="table table-striped table-borderd" >
+          <tr>
+            <th>MARS PLANET PROFILE</th>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_1}}</td>
+            <td>{{mars.table_info_1}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_2}}</td>
+            <td>{{mars.table_info_2}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_3}}</td>
+            <td>{{mars.table_info_3}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_4}}</td>
+            <td>{{mars.table_info_4}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_5}}</td>
+            <td>{{mars.table_info_5}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_6}}</td>
+            <td>{{mars.table_info_6}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_7}}</td>
+            <td>{{mars.table_info_7}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_8}}</td>
+            <td>{{mars.table_info_8}}</td>
+          </tr>
+          <tr>
+            <td>{{mars.table_title_9}}</td>
+            <td>{{mars.table_info_9}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row" id="Hemispheres">
+      <div class="col-md-12">
+        <h4 class="heading"><strong>Mars Hemispheres</strong></h4>
+      </div>
+    </div>
+
+    <div class="row" id="Hemisphere Images 1">
+      <div class="col-md-6">
+        <img src={{mars.hemisphere1_image_urls.img_url}} width="500px">
+        <p><strong>{{mars.hemisphere1_image_urls.title}}</strong></p>
+      </div>
+      <div class="col-md-6">
+        <img src={{mars.hemisphere2_image_urls.img_url}} width="500px">
+        <p><strong>{{mars.hemisphere2_image_urls.title}}</strong></p>
+      </div>
+    </div>
+
+    <div class="row border" id="Hemisphere Images 2">
+      <div class="col-md-6">
+        <img src={{mars.hemisphere3_image_urls.img_url}} width="500px">
+        <p><strong>{{mars.hemisphere3_image_urls.title}}</strong></p>
+      </div>
+      <div class="col-md-6">
+        <img src={{mars.hemisphere4_image_urls.img_url}} width="500px">
+        <p><strong>{{mars.hemisphere4_image_urls.title}}</strong></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
